@@ -1,9 +1,19 @@
 package Equipo;
 
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 public class Espada implements Armamento{
-    int purezaMaterial = 0;
+    @Id
+    @GeneratedValue
+    @Column(name = "id")
+    private long id;
+
+    @Column (name = "filo")
+    int filo;
 
     public int calcularCalidadTotal(){
-        return 0;
+        return filo*purezaMaterial;
     }
 }

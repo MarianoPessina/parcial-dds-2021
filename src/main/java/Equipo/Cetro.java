@@ -1,10 +1,20 @@
 package Equipo;
 
-public class Cetro implements Armamento{
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
-    int purezaMaterial = 0;
+public class Cetro implements Armamento{
+    @Id
+    @GeneratedValue
+    @Column(name = "id")
+    private long id;
+
+    @Column (name = "largo")
+    int largo;
 
     public int calcularCalidadTotal(){
-        return 0;
+
+        return (largo*2 + purezaMaterial*3);
     }
 }

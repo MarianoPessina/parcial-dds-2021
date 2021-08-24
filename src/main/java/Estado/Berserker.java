@@ -1,6 +1,6 @@
-package estado;
+package Estado;
 
-public class Berserker implements estado {
+public class Berserker implements Estado {
     public Double calcularMultiplicadorDanio(){
         return 1.5;
     }

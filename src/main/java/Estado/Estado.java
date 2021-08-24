@@ -1,5 +1,5 @@
-package estado;
+package Estado;
 
-public interface estado {
+public interface Estado {
     Double calcularMultiplicadorDanio();
 }
